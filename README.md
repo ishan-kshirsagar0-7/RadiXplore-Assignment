@@ -6,13 +6,6 @@ This repository contains the complete solution for the RadiXplore Candidate Codi
 
 The system can process PDFs individually or as a complete batch. The final outputs, including a combined JSONL file for all reports and individual files for each report, are stored in the `/output` directory.
 
-A sample from the final combined output (`final_submission.jsonl`):
-```jsonl
-{"pdf_file": "Report_2.pdf", "page_number": 1, "project_name": "Lake Hope High Purity Alumina (", "context_sentence": "Lake Hope High Purity Alumina (HPA) Project, WA (IPT earning 80%)", "ner_confidence": 0.9515, "coordinates": [-32.4654, 120.4798]}
-{"pdf_file": "Report_2.pdf", "page_number": 4, "project_name": "Arkun Project", "context_sentence": "eastern part of the Caligula prospect at Impact\u2019s 100% owned Arkun Project located 150 km east of Perth in the", "ner_confidence": 0.9992, "coordinates": [-31.9, 117.2]}
-{"pdf_file": "Report_3.pdf", "page_number": 1, "project_name": "Mangaroon Gold Project", "context_sentence": "of RC and diamond drilling at the 100% owned Mangaroon Gold Project (\u201cMangaroon\u201d), in", "ner_confidence": 0.9994, "coordinates": [-23.85669, 115.73919]}
-```
-
 ## System Architecture
 
 The pipeline is designed as a three-stage batch process to maximize efficiency, especially during the expensive LLM inference step.
