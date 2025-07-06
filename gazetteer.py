@@ -1,4 +1,4 @@
-# I tried out an approach in which the Gemini LLM would just return the location (place name) of the project, and then I'd use a gazetter
+# I tried out an approach in which the Gemini LLM would just return the location (place name) of the project, and then I'd use a gazetteer
 # to find out the coordinates, but I ended up not following through with this idea. The very reason I tried this out, was because - asking
 # Gemini to directly search coordinates of all project names (from all 5 report pdfs at the same time) was taking up too much time 
 # (∼60-65 seconds). I thought maybe this approach would potentially save me some time by offloading the coordinate extraction process to
